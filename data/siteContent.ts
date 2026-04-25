@@ -1,9 +1,9 @@
-import { 
-  Activity, 
-  Layers, 
-  Search, 
-  Megaphone, 
-  Workflow, 
+import {
+  Activity,
+  Layers,
+  Search,
+  Megaphone,
+  Workflow,
   Target,
   Building2,
   Brain,
@@ -26,7 +26,7 @@ export const siteContent = {
     ],
     cta: {
       text: "Apply Now",
-      href: "#apply"
+      href: "/apply"
     }
   },
   hero: {
@@ -36,10 +36,10 @@ export const siteContent = {
       highlight: "SaaS & AI",
       suffix: "Companies"
     },
-    description: "A Demand Engine is a structured system that turns positioning, search, and founder authority into predictable inbound pipeline.",
+    description: "I design structured demand systems that turn content, search, and storytelling into predictable pipeline, category authority, and long-term growth.",
     ctas: [
-      { text: "Explore Demand Engines", href: "#process", variant: "secondary" },
-      { text: "Apply for Partnership", href: "#apply", variant: "primary" }
+      { text: "Explore My Demand Systems", href: "#process", variant: "secondary" },
+      { text: "Apply for Strategic Partnership", href: "/apply", variant: "primary" }
     ],
     journeyPillars: [
       { title: "Positioning Depth", icon: Layers, desc: "Solidify your market narrative & differentiation." },
@@ -48,22 +48,21 @@ export const siteContent = {
       { title: "Conversion Architecture", icon: Workflow, desc: "Turn all attention into a predictable inbound pipeline." }
     ],
     framework: {
-        title: "The Demand Engine",
-        subtitle: "Execution Framework"
+      title: "The Demand Engine",
+      subtitle: "Execution Framework"
     }
   },
   whatDemandDelivers: {
     badge: "The Core Philosophy",
     title: {
-        main: "What Real B2B Demand Generation Should",
-        highlight: "Deliver?"
+      main: "What Real B2B Demand Generation Should",
+      highlight: "Deliver?"
     },
-    quote: "If your marketing isn't driving revenue conversations, it's not demand generation.",
-    quoteLabel: "The Demand Principle",
     paragraphs: [
-        "Most agencies think demand generation equals to traffic, but real demand generation for B2B companies means generating qualified pipeline, not impressions.",
-        "The correct way of implementing demand generation for your company is aligning content with buyer intent, creating compounding inbound systems and building authority before prospects speak to sales."
-    ]
+      "Most agencies think demand generation equals to traffic, but real demand generation for B2B companies means generating qualified pipeline, not impressions.",
+      "The correct way of implementing demand generation for your company is aligning content with buyer intent, creating compounding inbound systems and building authority before prospects speak to sales.",
+    ],
+    highlightParaText: "If your marketing isn't driving revenue conversations, it's not demand generation."
   },
   processTimeline: {
     title: "How I Build Demand",
@@ -88,61 +87,54 @@ export const siteContent = {
     ]
   },
   services: {
-    badge: "Partnership Models",
+    badge: "Section 4 — My Approach to Demand Generation",
     title: {
-        main: "My B2B Demand Generation",
-        highlight: "Services"
+      main: "My Demand Engine",
+      highlight: "Framework",
     },
     items: [
       {
         title: "Pipeline Accelerator System",
-        priceRange: "$1,500–$2,000/month",
-        commitment: "3-month minimum",
+        description: "For companies that need predictable demos.",
         icon: Activity,
         features: [
-          "Full demand audit & ICP definition",
-          "Content engine setup (SEO + thought leadership)",
-          "LinkedIn distribution strategy",
-          "Monthly pipeline reporting",
-          "Bi-weekly strategy calls",
+          "Buyer-intent SEO architecture",
+          "Conversion-focused content",
+          "Revenue-led video storytelling",
+          "Lead capture and tracking systems",
         ],
       },
       {
         title: "Category Leader Blueprint",
-        priceRange: "$2,000–$3,000/month",
-        commitment: "6-month minimum",
+        description: "For companies that want market dominance.",
         icon: Layers,
         features: [
-          "Everything in Pipeline Accelerator",
-          "Category narrative & positioning",
-          "Founder brand development",
-          "Analyst & media outreach strategy",
-          "Demand Engine performance dashboard",
-          "Weekly strategy sessions",
+          "Strategic brand positioning",
+          "Authority-driven content clusters",
+          "Thought leadership strategy",
+          "Competitive visibility expansion",
         ],
         recommended: true,
       },
       {
         title: "Founder Magnet Machine",
-        priceRange: "$1,500–$2,500/month",
-        commitment: "4-month minimum",
+        description: "For public-facing founders.",
         icon: Megaphone,
         features: [
-          "Founder-led content system",
-          "LinkedIn authority building",
-          "Podcast & speaking pipeline",
-          "Inbound lead nurture sequences",
-          "Monthly growth review",
+          "Personal authority positioning",
+          "LinkedIn and video storytelling system",
+          "Executive thought leadership content",
+          "Opportunity generation strategy",
         ],
       },
-    ]
+    ],
   },
   whoItsFor: {
     badge: "Ideal Partnerships",
     title: {
-        main: "Built for Growth-Stage",
-        highlight: "SaaS & AI",
-        suffix: "Teams"
+      main: "Built for Growth-Stage",
+      highlight: "SaaS & AI",
+      suffix: "Teams"
     },
     description: "My B2B demand generation services are precise systems engineered for organizations ready to scale with intent and authority.",
     idealClients: [
@@ -176,55 +168,54 @@ export const siteContent = {
       },
     ],
     notFor: {
-        title: {
-            main: "Who this is",
-            highlight: "Not",
-            suffix: "for"
-        },
-        description: "My systems require serious commitment and a long-term mindset. If your team aligns with the categories below, we won't be a good match.",
-        items: [
-            "Idea-stage startups without product-market fit.",
-            "Companies looking for quick-fix marketing hacks.",
-            "Teams unwilling to invest in founder authority.",
-            "Businesses that just want 'more blog traffic'.",
-        ]
+      title: {
+        main: "Who this is",
+        highlight: "Not",
+        suffix: "for"
+      },
+      description: "My systems require serious commitment and a long-term mindset. If your team falls under the categories below, we won't be a good match.",
+      items: [
+        "Idea-stage startups",
+        "Short-term marketing experiments ",
+        "Companies looking for “just blogs”",
+      ]
     }
   },
   whatMakesDifferent: {
     title: "What Makes Me Different from a B2B Demand Generation Agency",
     mostAgencies: {
-        title: "Most Agencies operate on",
-        items: [
-            {
-                title: "Vanity Metrics",
-                description: "Focus on traffic and clicks instead of sales conversations.",
-            },
-            {
-                title: "Siloed Execution",
-                description: "Treating SEO, content, and storytelling as disconnected channels.",
-            },
-            {
-                title: "Task Vendors",
-                description: "Executing random acts of marketing without a unifying strategy.",
-            },
-        ]
+      title: "Most Agencies operate on",
+      items: [
+        {
+          title: "Vanity Metrics",
+          description: "Focus on traffic and clicks instead of sales conversations.",
+        },
+        {
+          title: "Siloed Execution",
+          description: "Treating SEO, content, and storytelling as disconnected channels.",
+        },
+        {
+          title: "Task Vendors",
+          description: "Executing random acts of marketing without a unifying strategy.",
+        },
+      ]
     },
     myDemandEngine: {
-        title: "My Demand Engine",
-        items: [
-            {
-                title: "Pipeline & Revenue",
-                description: "Map demand generation directly to measurable sales outcomes.",
-            },
-            {
-                title: "Integrated Narrative",
-                description: "Fuse search, content, and category positioning into one system.",
-            },
-            {
-                title: "Compounding Leverage",
-                description: "Build repeatable growth engines optimized for long-term ROI.",
-            },
-        ]
+      title: "My Demand Engine",
+      items: [
+        {
+          title: "Pipeline & Revenue",
+          description: "Map demand generation directly to measurable sales outcomes.",
+        },
+        {
+          title: "Integrated Narrative",
+          description: "Fuse search, content, and category positioning into one system.",
+        },
+        {
+          title: "Compounding Leverage",
+          description: "Build repeatable growth engines optimized for long-term ROI.",
+        },
+      ]
     }
   },
   faq: {
@@ -252,59 +243,60 @@ export const siteContent = {
   },
   finalCta: {
     title: {
-        main: "Growth Becomes Predictable When",
-        highlight: "Demand Is Architected"
+      main: "Growth Becomes Predictable When",
+      highlight: "Demand Is Architected"
     },
-    description: "Applications are reviewed personally. If there’s alignment, we’ll schedule a strategy call to build a demand engine that turns your expertise into pipeline.",
-    cta: "Apply for Strategy",
+    description: "Applications are reviewed personally. If there's alignment, we'll schedule a strategy call.",
+    cta: "Apply for Strategic Partnership",
+    href: "/apply",
     form: {
-        title: "Application",
-        fields: {
-            firstName: { label: "First Name", placeholder: "Jane" },
-            lastName: { label: "Last Name", placeholder: "Doe" },
-            email: { label: "Work Email", placeholder: "jane@company.com" },
-            website: { label: "Company Website", placeholder: "https://company.com" },
-            bottleneck: { label: "Primary Growth Bottleneck", placeholder: "Where is your pipeline breaking right now?" }
-        },
-        submit: "Submit Application",
-        cancel: "Cancel",
-        success: "Application received. I'll be in touch soon."
+      title: "Application",
+      fields: {
+        firstName: { label: "First Name", placeholder: "Jane" },
+        lastName: { label: "Last Name", placeholder: "Doe" },
+        email: { label: "Work Email", placeholder: "jane@company.com" },
+        website: { label: "Company Website", placeholder: "https://company.com" },
+        bottleneck: { label: "Primary Growth Bottleneck", placeholder: "Where is your pipeline breaking right now?" }
+      },
+      submit: "Submit Application",
+      cancel: "Cancel",
+      success: "Application received. I'll be in touch soon."
     }
   },
   footer: {
     biography: {
-        name: "Maneesh Seepana",
-        role: "B2B Demand Generation Strategist building predictable revenue pipelines."
+      name: "Maneesh Seepana",
+      role: "B2B Demand Generation Strategist building predictable revenue pipelines."
     },
     columns: [
-        {
-            title: "Services",
-            links: [
-                { name: "Pipeline Accelerator", href: "#services" },
-                { name: "Category Leader", href: "#services" },
-                { name: "Founder Magnet", href: "#services" }
-            ]
-        },
-        {
-            title: "Insights",
-            links: [
-                { name: "Demand Engines", href: "#insights" },
-                { name: "B2B Strategy", href: "#insights" },
-                { name: "Case Studies", href: "#insights" }
-            ]
-        },
-        {
-            title: "Company",
-            links: [
-                { name: "About", href: "#about" },
-                { name: "Contact", href: "#apply" },
-                { name: "Apply", href: "#apply" }
-            ]
-        }
+      {
+        title: "Services",
+        links: [
+          { name: "Pipeline Accelerator", href: "#services" },
+          { name: "Category Leader", href: "#services" },
+          { name: "Founder Magnet", href: "#services" }
+        ]
+      },
+      {
+        title: "Insights",
+        links: [
+          { name: "Demand Engines", href: "#insights" },
+          { name: "B2B Strategy", href: "#insights" },
+          { name: "Case Studies", href: "#insights" }
+        ]
+      },
+      {
+        title: "Company",
+        links: [
+          { name: "About", href: "#about" },
+          { name: "Contact", href: "/apply" },
+          { name: "Apply", href: "/apply" }
+        ]
+      }
     ],
     social: [
-        { name: "LinkedIn", href: "#", icon: "linkedin" },
-        { name: "X (Twitter)", href: "#", icon: "twitter" }
+      { name: "LinkedIn", href: "#", icon: "linkedin" },
+      { name: "X (Twitter)", href: "#", icon: "twitter" }
     ],
     copyright: "Maneesh Seepana. All rights reserved."
   }

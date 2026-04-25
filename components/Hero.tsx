@@ -88,11 +88,11 @@ export default function Hero() {
 
                 {/* Beautiful Modern Journey Carousel (Desktop Only) */}
                 <div className="w-full hidden lg:flex h-full">
-                    <div className="relative w-full h-full min-h-[560px] bg-gradient-to-b from-[#161616]/90 to-[#0A0A0A]/90 backdrop-blur-2xl rounded-[2.5rem] border border-[#2A2A2A] overflow-hidden flex flex-col p-8 xl:p-10 shadow-[0_20px_80px_rgba(0,0,0,0.6)] group">
+                    <div className="relative w-full h-full min-h-[420px] bg-gradient-to-b from-[#161616]/90 to-[#0A0A0A]/90 backdrop-blur-2xl rounded-[2.5rem] border border-[#2A2A2A] overflow-hidden flex flex-col p-8 xl:p-10 shadow-[0_20px_80px_rgba(0,0,0,0.6)] group">
 
                         {/* Dynamic Background Aura based on active pillar */}
                         <div
-                            className="absolute rounded-full transition-all duration-1000 pointer-events-none blur-[120px]"
+                            className="absolute rounded-full transition-all duration-200 pointer-events-none blur-[120px]"
                             style={{
                                 width: '400px',
                                 height: '400px',
@@ -124,7 +124,7 @@ export default function Hero() {
                         </div>
 
                         {/* Interactive List */}
-                        <div className="relative flex-1 w-full flex flex-col justify-center gap-2 z-10">
+                        <div className="relative flex-1 w-full flex flex-col justify-center gap-1 z-10">
                             {journeyPillars.map((pillar, idx) => {
                                 const isActive = idx === activePillar;
                                 const isPassed = idx < activePillar;
@@ -133,20 +133,20 @@ export default function Hero() {
                                 return (
                                     <div
                                         key={idx}
-                                        className={`flex items-start gap-5 p-5 rounded-[24px] cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] border
+                                        className={`flex items-center gap-4 p-2 rounded-[24px] cursor-pointer transition-all duration-200ms] ease-[cubic-bezier(0.22,1,0.36,1)] border
                                             ${isActive ? 'bg-[#161616] border-[#333]/80 shadow-[0_15px_30px_rgba(0,0,0,0.4)] scale-100' : 'bg-transparent border-transparent hover:bg-[#111] scale-[0.98] opacity-60 hover:opacity-100'}
                                         `}
                                         onClick={() => setActivePillar(idx)}
                                     >
                                         <div className={`relative flex items-center justify-center flex-shrink-0 mt-0.5`}>
-                                            <div className={`w-12 h-12 rounded-[16px] flex items-center justify-center transition-all duration-500 
+                                            <div className={`w-12 h-12 rounded-[16px] flex items-center justify-center transition-all duration-300 
                                                 ${isActive ? 'bg-[#D4AF37]/10 border border-[#D4AF37]/30 shadow-[0_0_20px_rgba(212,175,55,0.15)]' : 'bg-[#111] border border-[#222]'}
                                             `}>
-                                                <Icon className={`w-5 h-5 transition-colors duration-500 ${isActive ? 'text-[#D4AF37]' : isPassed ? 'text-[#F2F2F2]/40' : 'text-[#555]'}`} />
+                                                <Icon className={`w-5 h-5 transition-colors duration-300 ${isActive ? 'text-[#D4AF37]' : isPassed ? 'text-[#F2F2F2]/40' : 'text-[#555]'}`} />
                                             </div>
                                         </div>
 
-                                        <div className="flex flex-col flex-1 pb-1">
+                                        <div className="flex flex-col flex-1">
                                             <div className="flex items-center gap-3 mb-[2px]">
                                                 <span className={`text-[10px] font-bold tracking-[0.2em] transition-colors duration-500 ${isActive ? 'text-[#D4AF37]' : 'text-[#444]'}`}>
                                                     0{idx + 1}
@@ -156,13 +156,13 @@ export default function Hero() {
                                                 </h3>
                                             </div>
 
-                                            <div className={`grid transition-all duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] overflow-hidden ${isActive ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'}`}>
+                                            {/* <div className={`grid transition-all duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)] overflow-hidden ${isActive ? 'grid-rows-[1fr] opacity-100 mt-2' : 'grid-rows-[0fr] opacity-0'}`}>
                                                 <div className="min-h-0 pr-4">
                                                     <p className="text-[16px] xl:text-[17px] text-[#999B9B] leading-[1.6]" style={{ fontFamily: '"EB Garamond", Garamond, serif' }}>
                                                         {pillar.desc}
                                                     </p>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 );

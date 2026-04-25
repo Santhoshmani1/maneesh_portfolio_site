@@ -145,17 +145,7 @@ export default function ServiceCards() {
                                         {service.title}
                                     </h3>
 
-                                    {/* Pricing Wrapper */}
-                                    <div className="mb-8 pb-8 border-b border-white/[0.06] relative">
-                                        <div className="absolute bottom-0 left-0 w-0 h-[1px] bg-gradient-to-r from-[#D4AF37] to-transparent group-hover:w-full transition-all duration-700 ease-out" />
-                                        <p className="text-[#D4AF37] text-[20px] mb-2 font-helvetica font-bold">
-                                            {service.priceRange}
-                                        </p>
-                                        <p className="text-[#999B9B] text-[15px] font-helvetica font-normal">
-                                            {service.commitment}
-                                        </p>
-                                    </div>
-
+  
                                     {/* Details List */}
                                     <ul className="flex flex-col gap-4 mb-10 flex-1">
                                         {service.features.map((feature) => (
