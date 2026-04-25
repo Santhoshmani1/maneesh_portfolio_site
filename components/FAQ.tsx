@@ -12,21 +12,18 @@ export default function FAQ() {
             <div className="max-w-275 mx-auto grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16 md:gap-12">
                 <div className="md:pr-8">
                     <h2
-                        className="text-4xl md:text-5xl font-bold text-[#F2F2F2] mb-4 leading-[1.1] tracking-tight"
-                        style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
+                        className="text-4xl md:text-5xl text-[#F2F2F2] mb-4 leading-[1.1] tracking-tight font-helvetica font-bold"
                     >
                         {title}
                     </h2>
                     <p
-                        className="text-[19px] md:text-[21px] text-[#999B9B] leading-[1.6] mb-8 font-light"
-                        style={{ fontFamily: "var(--font-eb-garamond)" }}
+                        className="text-[19px] md:text-[21px] text-[#999B9B] leading-[1.6] mb-8 font-garamond font-normal"
                     >
                         {description}
                     </p>
                     <a
                         href="#apply"
-                        className="group inline-flex items-center gap-3 px-7 py-3 text-[12px] uppercase tracking-[0.2em] font-medium text-[#F2F2F2] rounded-full border border-[rgba(255,255,255,0.15)] hover:border-[#D4AF37] hover:text-[#D4AF37] hover:bg-[rgba(212,175,55,0.03)] transition-all duration-500"
-                        style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                        className="group inline-flex items-center gap-3 px-7 py-3 text-[12px] uppercase tracking-[0.2em] text-[#F2F2F2] rounded-full border border-[rgba(255,255,255,0.15)] hover:border-[#D4AF37] hover:text-[#D4AF37] hover:bg-[rgba(212,175,55,0.03)] transition-all duration-500 font-helvetica font-bold"
                     >
                         {cta}
                         <svg className="w-4 h-4 transition-transform duration-500 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,8 +42,7 @@ export default function FAQ() {
                                     className={`group w-full flex justify-between items-center text-left py-6 cursor-pointer transition-all duration-500 ${isOpen ? "text-[#D4AF37]" : "text-[#F2F2F2] hover:text-[#D4AF37]"}`}
                                 >
                                     <span
-                                        className="font-bold text-[21px] md:text-[23px] tracking-tight pr-8"
-                                        style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                                        className="text-[21px] md:text-[23px] tracking-tight pr-8 font-helvetica font-bold"
                                     >
                                         {item.q}
                                     </span>
@@ -66,8 +62,7 @@ export default function FAQ() {
                                 >
                                     <div className="overflow-hidden">
                                         <p
-                                            className="text-[#999B9B] pb-8 leading-[1.7] text-[19px] md:text-[21px] font-light max-w-[90%]"
-                                            style={{ fontFamily: "var(--font-eb-garamond)" }}
+                                            className="text-[#999B9B] pb-8 leading-[1.7] text-[19px] md:text-[21px] max-w-[90%] font-garamond font-normal"
                                         >
                                             {item.a}
                                         </p>

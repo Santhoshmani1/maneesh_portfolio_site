@@ -68,14 +68,12 @@ export default function ProcessTimeline() {
             <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-16 md:gap-24">
                 <div className="md:sticky md:top-32 self-start">
                     <h2
-                        className="text-4xl md:text-5xl font-bold text-[#F2F2F2] mb-6 leading-[1.1] tracking-tight"
-                        style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                        className="text-4xl md:text-5xl font-helvetica font-bold text-[#F2F2F2] mb-6 leading-[1.1] tracking-tight"
                     >
                         {title}
                     </h2>
                     <p
-                        className="text-[20px] md:text-[22px] text-[#999B9B] leading-relaxed font-light"
-                        style={{ fontFamily: "var(--font-eb-garamond)" }}
+                        className="text-[20px] md:text-[22px] text-[#999B9B] leading-relaxed font-garamond font-normal"
                     >
                         {description}
                     </p>
@@ -113,21 +111,18 @@ export default function ProcessTimeline() {
 
                                 <div className={`transition-all duration-700 origin-left ${isCurrent ? "opacity-100 translate-x-0 scale-100" : isActive ? "opacity-60 translate-x-0 scale-100" : "opacity-30 -translate-x-4 scale-95"}`}>
                                     <span
-                                        className="text-7xl md:text-9xl font-bold text-[rgba(212,175,55,0.05)] absolute -top-10 md:-top-16 -left-2 md:-left-6 select-none z-0"
-                                        style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                                        className="text-7xl md:text-9xl font-helvetica font-bold text-[rgba(212,175,55,0.05)] absolute -top-10 md:-top-16 -left-2 md:-left-6 select-none z-0"
                                     >
                                         0{index + 1}
                                     </span>
                                     <div className="relative z-10">
                                         <h3
-                                            className="text-2xl md:text-3xl text-[#F2F2F2] font-bold mb-4 tracking-tight"
-                                            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                                            className="text-2xl md:text-3xl text-[#F2F2F2] font-helvetica font-bold mb-4 tracking-tight"
                                         >
                                             {step.title}
                                         </h3>
                                         <p
-                                            className="text-[19px] md:text-[22px] text-[#999B9B] leading-relaxed font-light"
-                                            style={{ fontFamily: "var(--font-eb-garamond)" }}
+                                            className="text-[19px] md:text-[22px] text-[#999B9B] leading-relaxed font-garamond font-normal"
                                         >
                                             {step.description}
                                         </p>

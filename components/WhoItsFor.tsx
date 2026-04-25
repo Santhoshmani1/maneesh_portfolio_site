@@ -60,7 +60,7 @@ export default function WhoItsFor() {
                 <div className={`flex flex-col items-center text-center mb-20 relative transition-all duration-[1000ms] transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#D4AF37]/20 bg-[#D4AF37]/[0.03] backdrop-blur-md w-fit mb-8 shadow-[0_0_20px_rgba(212,175,55,0.05)]">
                         <Users className="w-4 h-4 text-[#D4AF37]" />
-                        <span className="text-[#D4AF37] text-[12px] md:text-[13px] tracking-[0.2em] uppercase font-helvetica font-bold">
+                        <span className="text-[#D4AF37] text-[12px] md:text-[13px] tracking-[0.2em] uppercase font-helvetica font-normal">
                             {badge}
                         </span>
                     </div>
@@ -112,7 +112,7 @@ export default function WhoItsFor() {
                                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D4AF37] opacity-0 group-hover:opacity-75 transition-opacity duration-500"></span>
                                         <span className="relative inline-flex rounded-full h-2 w-2 bg-[#333] group-hover:bg-[#D4AF37] group-hover:shadow-[0_0_8px_rgba(212,175,55,0.8)] transition-all duration-500"></span>
                                     </span>
-                                    <span className="text-[10px] md:text-[11px] uppercase tracking-widest text-[#666] group-hover:text-[#D4AF37] transition-colors duration-500 font-helvetica font-bold">Match</span>
+                                    <span className="text-[10px] md:text-[11px] uppercase tracking-widest text-[#666] group-hover:text-[#D4AF37] transition-colors duration-500 font-helvetica font-normal">Match</span>
                                 </div>
                             </div>
 
@@ -155,7 +155,7 @@ export default function WhoItsFor() {
                             
                             <div className="inline-flex items-center gap-3 mb-8 px-5 py-2.5 rounded-full border border-[#333] bg-[#111] w-fit backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)]">
                                 <XCircle className="w-4 h-4 text-[#888]" />
-                                <span className="text-[#888] text-[11px] md:text-[12px] tracking-[0.2em] uppercase font-helvetica font-bold">
+                                <span className="text-[#888] text-[11px] md:text-[12px] tracking-[0.2em] uppercase font-helvetica font-normal">
                                     Not A Fit
                                 </span>
                             </div>

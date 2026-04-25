@@ -21,10 +21,10 @@ const AgencyPoint = ({ title, description }: { title: string; description: strin
             <GrayX />
         </div>
         <div className="flex flex-col gap-1">
-            <span className="text-[#F2F2F2]/80 font-medium tracking-wide text-[17px] md:text-lg" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+            <span className="text-[#F2F2F2]/80 tracking-wide text-[17px] md:text-lg font-helvetica font-normal">
                 {title}
             </span>
-            <span className="text-[#999B9B] leading-relaxed text-[17px] md:text-[19px]">
+            <span className="text-[#999B9B] leading-relaxed text-[17px] md:text-[19px] font-garamond font-normal">
                 {description}
             </span>
         </div>
@@ -37,10 +37,10 @@ const MyPoint = ({ title, description }: { title: string; description: string })
             <GoldCheckmark />
         </div>
         <div className="flex flex-col gap-1.5">
-            <span className="text-[#D4AF37] font-bold tracking-wide text-[17px] md:text-lg" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+            <span className="text-[#D4AF37] tracking-wide text-[17px] md:text-lg font-helvetica font-bold">
                 {title}
             </span>
-            <span className="text-[#F2F2F2] leading-relaxed text-[18px] md:text-[20px]">
+            <span className="text-[#F2F2F2] leading-relaxed text-[18px] md:text-[20px] font-garamond font-normal">
                 {description}
             </span>
         </div>
@@ -78,8 +78,7 @@ export default function WhatMakesDifferent() {
             <div className={`max-w-275 mx-auto relative z-10 transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                 <div className="text-center max-w-225 mx-auto mb-16">
                     <h2
-                        className="text-4xl md:text-5xl font-bold text-[#F2F2F2] leading-[1.1] tracking-tight"
-                        style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                        className="text-4xl md:text-5xl text-[#F2F2F2] leading-[1.1] tracking-tight font-helvetica font-bold"
                     >
                         {title}
                     </h2>
@@ -89,13 +88,12 @@ export default function WhatMakesDifferent() {
                     {/* Most Agencies */}
                     <div className="bg-[#111111] border border-[rgba(255,255,255,0.05)] rounded-[2rem] p-8 md:p-12 relative overflow-hidden transition-all duration-500 hover:border-[rgba(255,255,255,0.1)] group/card">
                         <h3
-                            className="text-[#999B9B] uppercase tracking-widest text-xs md:text-sm font-bold mb-10 flex items-center gap-3 transition-colors duration-300 group-hover/card:text-[#F2F2F2]"
-                            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                            className="text-[#999B9B] uppercase tracking-widest text-xs md:text-sm mb-10 flex items-center gap-3 transition-colors duration-300 group-hover/card:text-[#F2F2F2] font-helvetica font-bold"
                         >
                             <span className="w-2 h-2 rounded-full bg-[#999B9B]/50 transition-colors duration-300 group-hover/card:bg-[#999B9B]"></span>
                             {mostAgencies.title}
                         </h3>
-                        <ul className="flex flex-col gap-8 text-[#999B9B] font-light" style={{ fontFamily: "var(--font-eb-garamond)" }}>
+                        <ul className="flex flex-col gap-8 text-[#999B9B] font-garamond font-normal">
                             {mostAgencies.items.map((point) => (
                                 <AgencyPoint
                                     key={point.title}
@@ -110,8 +108,7 @@ export default function WhatMakesDifferent() {
                     <div className="bg-linear-to-b from-[#1A1A1A] to-[#111111] border border-[#D4AF37]/40 rounded-[2rem] p-8 md:p-12 relative overflow-hidden shadow-[0_0_40px_rgba(212,175,55,0.08)] transition-all duration-500 hover:shadow-[0_0_60px_rgba(212,175,55,0.12)] hover:-translate-y-1 md:hover:-translate-y-2">
                         <div className="absolute -top-32 -right-32 w-64 h-64 bg-[#D4AF37] opacity-[0.08] blur-[60px] rounded-full pointer-events-none transition-opacity duration-500" />
                         <h3
-                            className="text-[#D4AF37] uppercase tracking-widest text-xs md:text-sm font-bold mb-10 flex items-center gap-3"
-                            style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                            className="text-[#D4AF37] uppercase tracking-widest text-xs md:text-sm mb-10 flex items-center gap-3 font-helvetica font-bold"
                         >
                             <span className="relative flex h-3 w-3">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D4AF37] opacity-40"></span>
@@ -119,7 +116,7 @@ export default function WhatMakesDifferent() {
                             </span>
                             {myDemandEngine.title}
                         </h3>
-                        <ul className="flex flex-col gap-8 text-[#F2F2F2] font-light" style={{ fontFamily: "var(--font-eb-garamond)" }}>
+                        <ul className="flex flex-col gap-8 text-[#F2F2F2] font-garamond font-normal">
                             {myDemandEngine.items.map((point) => (
                                 <MyPoint
                                     key={point.title}

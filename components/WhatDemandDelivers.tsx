@@ -42,14 +42,13 @@ export default function WhatDemandDelivers() {
                 <div className={`flex flex-col relative w-full items-start transition-all duration-[1000ms] transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#999B9B]/20 bg-white/[0.02] backdrop-blur-md w-fit mb-8 shadow-[0_0_15px_rgba(255,255,255,0.02)]">
                         <Zap className="w-4 h-4 text-[#D4AF37]" />
-                        <span className="text-[#999B9B] text-[11px] md:text-[13px] font-semibold tracking-[0.15em] uppercase" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
+                        <span className="text-[#999B9B] text-[11px] md:text-[13px] tracking-[0.15em] uppercase font-helvetica font-normal">
                             {badge}
                         </span>
                     </div>
 
                     <h2
-                        className="text-[38px] md:text-[46px] lg:text-[50px] font-medium text-[#F2F2F2] mb-14 leading-[1.1] tracking-tight text-balance"
-                        style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
+                        className="text-[38px] md:text-[46px] lg:text-[50px] text-[#F2F2F2] mb-14 leading-[1.1] tracking-tight text-balance font-helvetica font-bold"
                     >
                         {title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#E2C365] to-[#B3932D]">{title.highlight}</span>
                     </h2>
@@ -62,7 +61,7 @@ export default function WhatDemandDelivers() {
                         <div key={idx} className="relative group cursor-default">
                             <div className="absolute -left-6 md:-left-10 top-2 bottom-2 w-[2px] bg-gradient-to-b from-[#D4AF37]/60 via-[#D4AF37]/20 to-transparent scale-y-0 group-hover:scale-y-100 transition-transform duration-700 origin-top" />
                             <div className="absolute -left-6 md:-left-10 top-2 bottom-2 w-[2px] bg-[#222]" />
-                            <p className="text-[22px] md:text-[27px] text-[#999B9B] leading-[1.6] font-light group-hover:text-[#c4c4c4] transition-colors duration-500" style={{ fontFamily: '"EB Garamond", Garamond, serif' }}>
+                            <p className="text-[22px] md:text-[27px] text-[#999B9B] leading-[1.6] group-hover:text-[#c4c4c4] transition-colors duration-500 font-garamond font-normal">
                                 {para}
                             </p>
                         </div>
@@ -71,7 +70,7 @@ export default function WhatDemandDelivers() {
                     <div className="relative group cursor-default">
                         <div className="absolute -left-6 md:-left-10 top-2 bottom-2 w-[2px] bg-gradient-to-b from-[#D4AF37]/60 via-[#D4AF37]/20 to-transparent scale-y-0 group-hover:scale-y-100 transition-transform duration-700 origin-top" />
                         <div className="absolute -left-6 md:-left-10 top-2 bottom-2 w-[2px] bg-[#222]" />
-                        <p className="text-[32px] md:text-[27px] text-[#f2f2f2] leading-[1.6] font-light group-hover:text-[#c4c4c4] transition-colors duration-500" style={{ fontFamily: '"EB Garamond", Garamond, serif' }}>
+                        <p className="text-[32px] md:text-[27px] text-[#f2f2f2] leading-[1.6] group-hover:text-[#c4c4c4] transition-colors duration-500 font-garamond italic">
                             {highlightParaText}
                         </p>
                     </div>

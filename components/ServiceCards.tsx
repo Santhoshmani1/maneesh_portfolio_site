@@ -80,7 +80,7 @@ export default function ServiceCards() {
                 <div className={`flex flex-col items-center text-center transition-all duration-[1000ms] transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#999B9B]/20 bg-white/[0.02] backdrop-blur-md w-fit mb-8 shadow-[0_0_15px_rgba(255,255,255,0.02)] transition-transform hover:scale-105 duration-300">
                         <LayoutTemplate className="w-4 h-4 text-[#D4AF37]" />
-                        <span className="text-[#999B9B] text-[11px] md:text-[13px] tracking-[0.15em] uppercase font-helvetica font-bold">
+                        <span className="text-[#999B9B] text-[11px] md:text-[13px] tracking-[0.15em] uppercase font-helvetica font-normal">
                             {badge}
                         </span>
                     </div>
