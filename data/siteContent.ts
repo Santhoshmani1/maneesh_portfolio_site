@@ -21,7 +21,7 @@ export const siteContent = {
       { name: "Home", href: "#home" },
       { name: "Insights", href: "#insights" },
       { name: "Process", href: "#process" },
-      { name: "Services & Pricing", href: "#services" },
+      { name: "Services", href: "#services" },
       { name: "FAQ", href: "#faq" }
     ],
     cta: {
@@ -87,7 +87,7 @@ export const siteContent = {
     ]
   },
   services: {
-    badge: "Section 4 — My Approach to Demand Generation",
+    badge: "My Approach to Demand Generation",
     title: {
       main: "My Demand Engine",
       highlight: "Framework",
@@ -256,7 +256,7 @@ export const siteContent = {
         lastName: { label: "Last Name", placeholder: "Doe" },
         email: { label: "Work Email", placeholder: "jane@company.com" },
         website: { label: "Company Website", placeholder: "https://company.com" },
-        bottleneck: { label: "Primary Growth Bottleneck", placeholder: "Where is your pipeline breaking right now?" }
+        bottleneck: { label: "Primary Growth Bottleneck", placeholder: "What's holding your business from growing faster?" }
       },
       submit: "Submit Application",
       cancel: "Cancel",
