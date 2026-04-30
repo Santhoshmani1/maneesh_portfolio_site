@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhatDemandDelivers from "@/components/WhatDemandDelivers";
 import WhoItsFor from "@/components/WhoItsFor";
@@ -12,7 +11,6 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
         <Hero />
         <WhatDemandDelivers />

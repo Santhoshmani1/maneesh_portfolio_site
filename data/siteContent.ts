@@ -18,11 +18,11 @@ export const siteContent = {
   header: {
     logo: "Maneesh Seepana",
     navLinks: [
-      { name: "Home", href: "#home" },
-      { name: "Insights", href: "#insights" },
-      { name: "Process", href: "#process" },
-      { name: "Services", href: "#services" },
-      { name: "FAQ", href: "#faq" }
+      { name: "Home", href: "/#home" },
+      { name: "Insights", href: "/#insights" },
+      { name: "Process", href: "/#process" },
+      { name: "Services", href: "/#services" },
+      { name: "FAQ", href: "/#faq" }
     ],
     cta: {
       text: "Apply Now",
