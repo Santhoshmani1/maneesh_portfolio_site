@@ -20,7 +20,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section id="home" className="relative w-full flex items-center justify-center overflow-hidden bg-[#0D0D0D] py-12 lg:py-0 min-h-[calc(100dvh-85px)]">
+        <section id="home" className="relative w-full flex items-center justify-center overflow-hidden bg-[#0D0D0D] py-4 lg:py-0 h-[calc(100dvh-85px)] lg:min-h-[calc(100dvh-85px)] lg:h-auto">
             {/* Background Effects */}
             <div className="absolute inset-0 z-0 pointer-events-none">
                 <div
@@ -37,7 +37,7 @@ export default function Hero() {
             <div className={`relative z-10 grid grid-cols-1 lg:grid-cols-[1.3fr_0.7fr] gap-10 lg:gap-12 items-center px-6 md:px-12 max-w-[1300px] mx-auto w-full transition-all duration-1000 transform ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 {/* Text Content */}
                 <div className="flex flex-col justify-center max-w-[800px] text-left">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#999B9B]/20 bg-[#D4AF37]/5 backdrop-blur-md w-fit mb-6 shadow-[0_0_15px_rgba(212,175,55,0.05)]">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#999B9B]/20 bg-[#D4AF37]/5 backdrop-blur-md w-fit mb-4 lg:mb-6 shadow-[0_0_15px_rgba(212,175,55,0.05)]">
                         <Sparkles className="w-4 h-4 text-[#D4AF37]" />
                         <span className="text-[#D4AF37] text-[11px] md:text-[13px] font-semibold tracking-[0.15em] uppercase" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>
                             {badge}
@@ -45,9 +45,9 @@ export default function Hero() {
                     </div>
 
                     <h1
-                        className="font-medium text-[#F2F2F2] leading-[1.05] tracking-tight mb-7 text-balance"
+                        className="font-medium text-[#F2F2F2] leading-[1.05] tracking-tight mb-4 lg:mb-7 text-balance"
                         style={{
-                            fontSize: "clamp(36px, 5.5vw, 62px)",
+                            fontSize: "clamp(34px, 5.5vw, 62px)",
                             fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
                         }}
                     >
@@ -55,20 +55,20 @@ export default function Hero() {
                     </h1>
 
                     <p
-                        className="text-[20px] md:text-[23px] text-[#999B9B] leading-[1.6] mb-10 max-w-[92%]"
+                        className="text-[18px] md:text-[23px] text-[#999B9B] leading-[1.5] md:leading-[1.6] mb-6 lg:mb-10 max-w-[92%]"
                         style={{ fontFamily: '"EB Garamond", Garamond, serif' }}
                     >
                         {description}
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:items-center">
                         {ctas.map((cta, idx) => (
                             <a
                                 key={cta.text}
                                 href={cta.href}
                                 className={cta.variant === "primary" 
-                                    ? "group flex flex-1 sm:flex-none items-center justify-center px-8 py-4 md:py-4 md:px-9 text-[14px] md:text-[15px] font-semibold border-2 tracking-wide text-[#0D0D0D] rounded-full border-white bg-white hover:bg-[#EAEAEA] hover:border-[#D4AF37] shadow-[0_8px_10px_rgba(255,255,255,0.08)] transition-all hover:-translate-y-0.5"
-                                    : "group flex flex-1 sm:flex-none items-center justify-center gap-3 border border-white/20 bg-white/5 backdrop-blur-sm text-[#F2F2F2] font-medium tracking-wide rounded-full px-7 py-4 md:py-4 md:px-8 text-[14px] md:text-[15px] hover:border-white/50 hover:bg-white/10 transition-all duration-300"
+                                    ? "group flex flex-1 sm:flex-none items-center justify-center px-6 py-3.5 md:py-4 md:px-9 text-[14px] md:text-[15px] font-semibold border-2 tracking-wide text-[#0D0D0D] rounded-full border-white bg-white hover:bg-[#EAEAEA] hover:border-[#D4AF37] shadow-[0_8px_10px_rgba(255,255,255,0.08)] transition-all hover:-translate-y-0.5"
+                                    : "group flex flex-1 sm:flex-none items-center justify-center gap-2 md:gap-3 border border-white/20 bg-white/5 backdrop-blur-sm text-[#F2F2F2] font-medium tracking-wide rounded-full px-6 py-3.5 md:py-4 md:px-8 text-[14px] md:text-[15px] hover:border-white/50 hover:bg-white/10 transition-all duration-300"
                                 }
                                 style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                             >

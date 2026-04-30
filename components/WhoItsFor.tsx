@@ -136,13 +136,13 @@ export default function WhoItsFor() {
                     ))}
                 </div>
 
-                {/* Split-Layout: Not for subsection - BLACK RELATED COLOR ONLY */}
+                {/* Split-Layout: Not for subsection */}
                 <div 
                     ref={notForRef} 
                     className={`relative w-full rounded-[2.5rem] md:rounded-[3rem] overflow-hidden transition-all duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] transform ${isNotForVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-16 scale-[0.98]'}`}
                 >
-                    {/* Dark aesthetic base */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#050505] to-[#0A0A0A] border border-white/[0.05] rounded-[2.5rem] md:rounded-[3rem]" />
+                    {/* Dark aesthetic base with subtle crimson undertones */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#070707] to-[#0A0A0A] border border-white/[0.05] rounded-[2.5rem] md:rounded-[3rem]" />
                     
                     {/* Dark themed diagonal stripes pattern */}
                     <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, transparent 1px, transparent 20px)' }} />
@@ -150,45 +150,55 @@ export default function WhoItsFor() {
                     <div className="relative z-10 flex flex-col lg:flex-row items-stretch">
                         
                         {/* Title Section (Left) */}
-                        <div className="p-10 md:p-14 lg:p-16 lg:w-[45%] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/[0.05] relative overflow-hidden bg-[#0A0A0A]/80 backdrop-blur-sm">
-                            <div className="absolute top-[-20%] right-[-20%] w-[80%] h-[80%] bg-white/5 rounded-full blur-[80px]" />
+                        <div className="p-10 md:p-14 lg:p-16 lg:w-[45%] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/[0.05] relative overflow-hidden bg-[#0A0A0A]/80 backdrop-blur-md">
+                            <div className="absolute top-[-20%] left-[-20%] w-[80%] h-[80%] bg-red-900/10 rounded-full blur-[100px] pointer-events-none" />
                             
-                            <div className="inline-flex items-center gap-3 mb-8 px-5 py-2.5 rounded-full border border-[#333] bg-[#111] w-fit backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)]">
-                                <XCircle className="w-4 h-4 text-[#888]" />
-                                <span className="text-[#888] text-[11px] md:text-[12px] tracking-[0.2em] uppercase font-helvetica font-normal">
+                            <div className="inline-flex items-center gap-3 mb-10 px-5 py-2.5 rounded-full border border-white/[0.05] bg-white/[0.02] w-fit backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] group hover:border-red-900/30 transition-colors duration-500">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-20"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500/50"></span>
+                                </span>
+                                <span className="text-[#888] text-[11px] md:text-[12px] tracking-[0.25em] uppercase font-helvetica font-medium group-hover:text-red-400/80 transition-colors duration-500">
                                     Not A Fit
                                 </span>
                             </div>
                             
                             <h3 
-                                className="text-[34px] md:text-[42px] text-[#F2F2F2] leading-[1.1] tracking-tight mb-6 font-helvetica font-bold" 
+                                className="text-[38px] md:text-[48px] text-[#F2F2F2] leading-[1.05] tracking-tight mb-8 font-helvetica font-bold" 
                             >
-                                {notFor.title.main} <span className="text-[#666]">{notFor.title.highlight}</span> {notFor.title.suffix}
+                                {notFor.title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#666] to-[#444]">{notFor.title.highlight}</span> {notFor.title.suffix}
                             </h3>
                             
                             <p 
-                                className="text-[#888] text-[19px] md:text-[21px] leading-[1.6] max-w-sm font-garamond font-normal" 
+                                className="text-[#777] text-[19px] md:text-[22px] leading-[1.65] max-w-[90%] font-garamond font-normal" 
                             >
                                 {notFor.description}
                             </p>
                         </div>
 
                         {/* List Section (Right) */}
-                        <div className="p-8 md:p-14 lg:p-16 lg:w-[55%] flex flex-col justify-center gap-4 bg-[#0A0A0A]/40">
+                        <div className="p-8 md:p-14 lg:p-16 lg:w-[55%] flex flex-col justify-center gap-5 bg-gradient-to-br from-[#0A0A0A]/40 to-[#050505]/40 relative z-10 overflow-hidden">
+                            <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-red-900/5 rounded-full blur-[100px] pointer-events-none" />
+                            
                             {notFor.items.map((item, idx) => (
                                 <div 
                                     key={idx} 
-                                    className={`group relative flex items-center gap-5 p-4 md:p-5 rounded-2xl border border-transparent hover:border-[#333] hover:bg-[#111] transition-all duration-300 transform ${isNotForVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}
-                                    style={{ transitionDelay: `${300 + (idx * 150)}ms` }}
+                                    className={`group relative flex items-center gap-6 p-5 md:p-6 rounded-[2rem] border border-white/[0.03] bg-[#0F0F0F]/50 backdrop-blur-md hover:bg-[#121212] hover:border-red-900/30 hover:shadow-[0_10px_40px_rgba(220,38,38,0.05)] transition-all duration-500 transform ${isNotForVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}
+                                    style={{ transitionDelay: `${400 + (idx * 150)}ms` }}
                                 >
-                                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-full border border-[#222] bg-[#0D0D0D] shrink-0 flex items-center justify-center group-hover:border-[#444] transition-all duration-300 shadow-inner">
-                                        <XCircle className="w-5 h-5 text-[#444] group-hover:text-[#888] transition-colors duration-300" />
+                                    <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-2xl border border-white/5 bg-[#050505] shrink-0 flex items-center justify-center group-hover:border-red-500/20 transition-all duration-500 overflow-hidden shadow-inner">
+                                        <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                        <XCircle className="w-5 h-5 md:w-6 md:h-6 text-[#444] group-hover:text-red-400 group-hover:scale-110 transition-all duration-500 relative z-10" />
                                     </div>
-                                    <p 
-                                        className="text-[18px] md:text-[21px] text-[#777] group-hover:text-[#ccc] transition-colors duration-300 relative z-10 leading-[1.4] font-garamond font-normal" 
-                                    >
-                                        {item}
-                                    </p>
+                                    <div className="flex flex-col relative">
+                                        <p 
+                                            className="text-[18px] md:text-[22px] text-[#777] group-hover:text-[#EAEAEA] transition-colors duration-500 font-garamond font-normal" 
+                                        >
+                                            {item}
+                                        </p>
+                                    </div>
+                                    {/* subtle red left border indicator on hover */}
+                                    <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0 bg-gradient-to-b from-red-500/80 to-red-800/80 rounded-r-full group-hover:h-1/2 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" />
                                 </div>
                             ))}
                         </div>
