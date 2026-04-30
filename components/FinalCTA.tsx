@@ -13,7 +13,7 @@ export default function FinalCTA() {
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.06)_0%,transparent_50%)]" />
             <div className="relative max-w-275 mx-auto text-center flex flex-col items-center z-10">
                 <h2
-                    className="text-5xl md:text-6xl lg:text-7xl text-[#F2F2F2] mb-8 leading-[1.1] tracking-tight max-w-225 font-helvetica font-bold"
+                    className="text-[40px] md:text-[50px] lg:text-[58px] text-[#F2F2F2] mb-8 leading-[1.1] tracking-tight max-w-225 font-helvetica font-bold "
                 >
                     {title.main}
                     <div className="text-[#D4AF37] mt-2">

@@ -36,10 +36,10 @@ export default function WhatDemandDelivers() {
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjMGQwZDBkIi8+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiMxYTFhMWEiLz4KPC9zdmc+')] opacity-[0.35] mix-blend-overlay" />
             </div>
 
-            <div className={`relative z-10 max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-16 lg:gap-24 items-center`}>
+            <div className={`relative z-10 max-w-[1300px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-12 lg:gap-24 items-center`}>
 
                 {/* Left Side: Title */}
-                <div className={`flex flex-col relative w-full items-start transition-all duration-[1000ms] transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                <div className={`flex flex-col relative w-full items-start transition-all duration-[1000ms] transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 md:translate-y-12'}`}>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#999B9B]/20 bg-white/[0.02] backdrop-blur-md w-fit mb-8 shadow-[0_0_15px_rgba(255,255,255,0.02)]">
                         <Zap className="w-4 h-4 text-[#D4AF37]" />
                         <span className="text-[#999B9B] text-[11px] md:text-[13px] tracking-[0.15em] uppercase font-helvetica font-normal">
@@ -48,7 +48,7 @@ export default function WhatDemandDelivers() {
                     </div>
 
                     <h2
-                        className="text-[38px] md:text-[46px] lg:text-[50px] text-[#F2F2F2] mb-14 leading-[1.1] tracking-tight text-balance font-helvetica font-bold"
+                        className="text-[38px] md:text-[46px] lg:text-[50px] text-[#F2F2F2] mb-0 leading-[1.1] tracking-tight text-balance font-helvetica font-bold"
                     >
                         {title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#E2C365] to-[#B3932D]">{title.highlight}</span>
                     </h2>
@@ -56,7 +56,7 @@ export default function WhatDemandDelivers() {
                 </div>
 
                 {/* Right Side: Clarification Paragraphs */}
-                <div className={`flex flex-col gap-12 relative w-full lg:pl-12 mt-16 lg:mt-0 transition-all duration-[1000ms] delay-300 transform ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
+                <div className={`flex flex-col gap-10 md:gap-12 relative w-full pl-6 md:pl-10 lg:pl-12 transition-all duration-[1000ms] delay-300 transform ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
                     {paragraphs.map((para, idx) => (
                         <div key={idx} className="relative group cursor-default">
                             <div className="absolute -left-6 md:-left-10 top-2 bottom-2 w-[2px] bg-gradient-to-b from-[#D4AF37]/60 via-[#D4AF37]/20 to-transparent scale-y-0 group-hover:scale-y-100 transition-transform duration-700 origin-top" />

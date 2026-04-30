@@ -57,8 +57,8 @@ export default function WhoItsFor() {
 
             <div className="relative z-10 max-w-[1300px] mx-auto">
                 {/* Header Section */}
-                <div className={`flex flex-col items-center text-center mb-20 relative transition-all duration-[1000ms] transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
-                    <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#D4AF37]/20 bg-[#D4AF37]/[0.03] backdrop-blur-md w-fit mb-8 shadow-[0_0_20px_rgba(212,175,55,0.05)]">
+                <div className={`flex flex-col items-center text-center mb-10 md:mb-20 relative transition-all duration-[1000ms] transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
+                    <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#D4AF37]/20 bg-[#D4AF37]/[0.03] backdrop-blur-md w-fit mb-6 md:mb-8 shadow-[0_0_20px_rgba(212,175,55,0.05)]">
                         <Users className="w-4 h-4 text-[#D4AF37]" />
                         <span className="text-[#D4AF37] text-[12px] md:text-[13px] tracking-[0.2em] uppercase font-helvetica font-normal">
                             {badge}
@@ -66,7 +66,7 @@ export default function WhoItsFor() {
                     </div>
 
                     <h2
-                        className="text-[40px] md:text-[50px] lg:text-[58px] text-[#F2F2F2] mb-6 leading-[1.05] tracking-tight text-balance max-w-4xl font-helvetica font-bold"
+                        className="text-[40px] md:text-[50px] lg:text-[58px] text-[#F2F2F2] mb-4 md:mb-6 leading-[1.05] tracking-tight text-balance max-w-4xl font-helvetica font-bold"
                     >
                         {title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#E2C365] to-[#B3932D]">{title.highlight}</span> {title.suffix}
                     </h2>
@@ -78,7 +78,7 @@ export default function WhoItsFor() {
                 </div>
 
                 {/* Bento Grid: Ideal Clients */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-32 relative z-10 auto-rows-[minmax(0,1fr)]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-16 md:mb-32 relative z-10 auto-rows-[minmax(0,1fr)]">
                     {idealClients.map((client, idx) => (
                         <div
                             key={client.title}
@@ -99,7 +99,7 @@ export default function WhoItsFor() {
                             {/* Permanent subtle ambient light */}
                             <div className={`absolute -inset-10 bg-gradient-to-br ${client.gradient} opacity-50 group-hover:opacity-100 blur-[80px] transition-opacity duration-1000 -z-10`} />
 
-                            <div className="relative z-10 flex items-start justify-between mb-16 md:mb-20">
+                            <div className="relative z-10 flex items-start justify-between mb-8 md:mb-20">
                                 {/* Premium Icon Box */}
                                 <div className="relative w-16 h-16 rounded-2xl flex items-center justify-center border border-white/10 bg-gradient-to-b from-white/[0.05] to-transparent backdrop-blur-xl group-hover:border-[#D4AF37]/50 group-hover:shadow-[0_0_30px_rgba(212,175,55,0.2)] transition-all duration-500 overflow-hidden">
                                     <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -150,10 +150,10 @@ export default function WhoItsFor() {
                     <div className="relative z-10 flex flex-col lg:flex-row items-stretch">
                         
                         {/* Title Section (Left) */}
-                        <div className="p-10 md:p-14 lg:p-16 lg:w-[45%] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/[0.05] relative overflow-hidden bg-[#0A0A0A]/80 backdrop-blur-md">
+                        <div className="p-8 md:p-14 lg:p-16 lg:w-[45%] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/[0.05] relative overflow-hidden bg-[#0A0A0A]/80 backdrop-blur-md">
                             <div className="absolute top-[-20%] left-[-20%] w-[80%] h-[80%] bg-red-900/10 rounded-full blur-[100px] pointer-events-none" />
                             
-                            <div className="inline-flex items-center gap-3 mb-10 px-5 py-2.5 rounded-full border border-white/[0.05] bg-white/[0.02] w-fit backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] group hover:border-red-900/30 transition-colors duration-500">
+                            <div className="inline-flex items-center gap-3 mb-6 md:mb-10 px-5 py-2.5 rounded-full border border-white/[0.05] bg-white/[0.02] w-fit backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] group hover:border-red-900/30 transition-colors duration-500">
                                 <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-20"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500/50"></span>
@@ -164,7 +164,7 @@ export default function WhoItsFor() {
                             </div>
                             
                             <h3 
-                                className="text-[38px] md:text-[48px] text-[#F2F2F2] leading-[1.05] tracking-tight mb-8 font-helvetica font-bold" 
+                                className="text-[38px] md:text-[48px] text-[#F2F2F2] leading-[1.05] tracking-tight mb-4 md:mb-8 font-helvetica font-bold" 
                             >
                                 {notFor.title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#666] to-[#444]">{notFor.title.highlight}</span> {notFor.title.suffix}
                             </h3>
