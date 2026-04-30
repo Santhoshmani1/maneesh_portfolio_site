@@ -7,10 +7,12 @@ import ProcessTimeline from "@/components/ProcessTimeline";
 import FinalCTA from "@/components/FinalCTA";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function Home() {
   return (
     <>
+      <Analytics />
       <main>
         <Hero />
         <WhatDemandDelivers />
