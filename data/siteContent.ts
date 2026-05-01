@@ -4,7 +4,6 @@ import {
   Search,
   Megaphone,
   Workflow,
-  Target,
   Building2,
   Brain,
   UserPlus,
@@ -295,8 +294,9 @@ export const siteContent = {
       }
     ],
     social: [
-      { name: "LinkedIn", href: "#", icon: "linkedin" },
-      { name: "X (Twitter)", href: "#", icon: "twitter" }
+      { name: "LinkedIn", href: "https://www.linkedin.com/in/maneesh-kumar-seepana/", icon: "linkedin" },
+      { name: "Instagram", href: "https://www.instagram.com/maneeshseepana/", icon: "instagram" },
+      { name: "Gmail", href: "mailto:growth@maneeshseepana.com", icon: "gmail"},
     ],
     copyright: "Maneesh Seepana. All rights reserved."
   }
