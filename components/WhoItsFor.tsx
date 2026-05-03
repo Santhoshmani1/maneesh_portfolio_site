@@ -63,14 +63,14 @@ export default function WhoItsFor() {
                         <span className="text-[#D4AF37] text-[12px] md:text-[13px] tracking-[0.2em] uppercase font-helvetica font-normal">
                             {badge}
                         </span>
-                    </div>
+                    </div   >
 
                     <h2
                         className="text-[40px] md:text-[50px] lg:text-[58px] text-[#F2F2F2] mb-4 md:mb-6 leading-[1.05] tracking-tight text-balance max-w-4xl font-helvetica font-bold"
                     >
                         {title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#E2C365] to-[#B3932D]">{title.highlight}</span> {title.suffix}
                     </h2>
-                    <p 
+                    <p
                         className="text-[#999B9B] text-[20px] md:text-[23px] max-w-2xl mx-auto leading-[1.6] font-garamond font-normal"
                     >
                         {description}
@@ -86,16 +86,16 @@ export default function WhoItsFor() {
                             style={{ transitionDelay: `${idx * 150}ms`, boxShadow: "inset 0 1px 0 0 rgba(255,255,255,0.05)" }}
                         >
                             {/* Giant outlined background number */}
-                            <div 
-                                className="absolute right-[-5%] bottom-[-10%] z-0 text-[180px] md:text-[240px] text-transparent transition-all duration-1000 select-none pointer-events-none group-hover:-translate-y-4 group-hover:-translate-x-4 font-helvetica font-bold" 
-                                style={{ 
+                            <div
+                                className="absolute right-[-5%] bottom-[-10%] z-0 text-[180px] md:text-[240px] text-transparent transition-all duration-1000 select-none pointer-events-none group-hover:-translate-y-4 group-hover:-translate-x-4 font-helvetica font-bold"
+                                style={{
                                     WebkitTextStroke: '2px rgba(212,175,55,0.06)',
                                     lineHeight: 1
                                 }}
                             >
                                 0{idx + 1}
                             </div>
-                            
+
                             {/* Permanent subtle ambient light */}
                             <div className={`absolute -inset-10 bg-gradient-to-br ${client.gradient} opacity-50 group-hover:opacity-100 blur-[80px] transition-opacity duration-1000 -z-10`} />
 
@@ -105,7 +105,7 @@ export default function WhoItsFor() {
                                     <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                     <client.icon className="w-7 h-7 text-[#999B9B] relative z-10 group-hover:text-[#D4AF37] group-hover:scale-110 transition-all duration-500" />
                                 </div>
-                                
+
                                 {/* Status Indicator */}
                                 <div className="flex items-center gap-2.5 px-4 py-2 bg-[#111111] border border-white/[0.08] rounded-full group-hover:border-[#D4AF37]/40 group-hover:bg-[#D4AF37]/10 transition-all duration-500 shadow-inner">
                                     <span className="relative flex h-2 w-2">
@@ -122,10 +122,10 @@ export default function WhoItsFor() {
                                 >
                                     {client.title}
                                 </h3>
-                                
+
                                 {/* Expanding Divider Animation */}
                                 <div className="w-10 h-[2px] bg-white/10 mb-6 group-hover:bg-[#D4AF37] group-hover:w-20 transition-all duration-700 ease-out" />
-                                
+
                                 <p
                                     className="text-[#888888] text-[18px] md:text-[21px] leading-[1.65] group-hover:text-[#c4c4c4] transition-colors duration-500 font-garamond font-normal"
                                 >
@@ -136,71 +136,62 @@ export default function WhoItsFor() {
                     ))}
                 </div>
 
-                {/* Split-Layout: Not for subsection */}
-                <div 
-                    ref={notForRef} 
+                {/* 1-Column Layout: Not for subsection */}
+                <div
+                    ref={notForRef}
                     className={`relative w-full rounded-[2.5rem] md:rounded-[3rem] overflow-hidden transition-all duration-[1000ms] ease-[cubic-bezier(0.22,1,0.36,1)] transform ${isNotForVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-16 scale-[0.98]'}`}
                 >
                     {/* Dark aesthetic base with subtle crimson undertones */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#070707] to-[#0A0A0A] border border-white/[0.05] rounded-[2.5rem] md:rounded-[3rem]" />
-                    
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A] to-[#050505] border border-white/[0.05] rounded-[2.5rem] md:rounded-[3rem]" />
+
                     {/* Dark themed diagonal stripes pattern */}
                     <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: 'repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, transparent 1px, transparent 20px)' }} />
 
-                    <div className="relative z-10 flex flex-col lg:flex-row items-stretch">
-                        
-                        {/* Title Section (Left) */}
-                        <div className="p-8 md:p-14 lg:p-16 lg:w-[45%] flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-white/[0.05] relative overflow-hidden bg-[#0A0A0A]/80 backdrop-blur-md">
-                            <div className="absolute top-[-20%] left-[-20%] w-[80%] h-[80%] bg-red-900/10 rounded-full blur-[100px] pointer-events-none" />
-                            
-                            <div className="inline-flex items-center gap-3 mb-6 md:mb-10 px-5 py-2.5 rounded-full border border-white/[0.05] bg-white/[0.02] w-fit backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] group hover:border-red-900/30 transition-colors duration-500">
-                                <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-20"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500/50"></span>
-                                </span>
-                                <span className="text-[#888] text-[11px] md:text-[12px] tracking-[0.25em] uppercase font-helvetica font-medium group-hover:text-red-400/80 transition-colors duration-500">
-                                    Not A Fit
-                                </span>
-                            </div>
-                            
-                            <h3 
-                                className="text-[38px] md:text-[48px] text-[#F2F2F2] leading-[1.05] tracking-tight mb-4 md:mb-8 font-helvetica font-bold" 
-                            >
-                                {notFor.title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#666] to-[#444]">{notFor.title.highlight}</span> {notFor.title.suffix}
-                            </h3>
-                            
-                            <p 
-                                className="text-[#777] text-[19px] md:text-[22px] leading-[1.65] max-w-[90%] font-garamond font-normal" 
-                            >
-                                {notFor.description}
-                            </p>
+                    <div className="relative z-10 flex flex-col p-8 md:p-14 lg:p-20 flex justify-center items-center">
+                        <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-red-900/10 rounded-full blur-[100px] pointer-events-none" />
+
+                        <div className="inline-flex items-center gap-3 mb-6 md:mb-10 px-5 py-2.5 rounded-full border border-white/[0.05] bg-white/[0.02] w-fit backdrop-blur-md shadow-[0_0_20px_rgba(0,0,0,0.5)] group hover:border-red-900/30 transition-colors duration-500">
+                            <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-20"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500/50"></span>
+                            </span>
+                            <span className="text-[#888] text-[11px] md:text-[12px] tracking-[0.25em] uppercase font-helvetica font-medium group-hover:text-red-400/80 transition-colors duration-500">
+                                Not A Fit
+                            </span>
                         </div>
 
-                        {/* List Section (Right) */}
-                        <div className="p-8 md:p-14 lg:p-16 lg:w-[55%] flex flex-col justify-center gap-5 bg-gradient-to-br from-[#0A0A0A]/40 to-[#050505]/40 relative z-10 overflow-hidden">
-                            <div className="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-red-900/5 rounded-full blur-[100px] pointer-events-none" />
+                        <h3
+                            className="text-[38px] md:text-[48px] text-[#F2F2F2] leading-[1.05] tracking-tight mb-8 font-helvetica font-bold max-w-2xl"
+                        >
+                            {notFor.title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#666] to-[#444]">{notFor.title.highlight}</span> {notFor.title.suffix}
+                        </h3>
+
+                        <div className="flex flex-col gap-6 relative z-10 max-w-3xl">
+                            <p className="text-[#F2F2F2] text-[19px] md:text-[22px] leading-[1.65] font-garamond font-normal">
+                                {notFor.description}
+                            </p>
                             
-                            {notFor.items.map((item, idx) => (
-                                <div 
-                                    key={idx} 
-                                    className={`group relative flex items-center gap-6 p-5 md:p-6 rounded-[2rem] border border-white/[0.03] bg-[#0F0F0F]/50 backdrop-blur-md hover:bg-[#121212] hover:border-red-900/30 hover:shadow-[0_10px_40px_rgba(220,38,38,0.05)] transition-all duration-500 transform ${isNotForVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}
-                                    style={{ transitionDelay: `${400 + (idx * 150)}ms` }}
-                                >
-                                    <div className="relative w-12 h-12 md:w-16 md:h-16 rounded-2xl border border-white/5 bg-[#050505] shrink-0 flex items-center justify-center group-hover:border-red-500/20 transition-all duration-500 overflow-hidden shadow-inner">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                        <XCircle className="w-5 h-5 md:w-6 md:h-6 text-[#444] group-hover:text-red-400 group-hover:scale-110 transition-all duration-500 relative z-10" />
-                                    </div>
-                                    <div className="flex flex-col relative">
-                                        <p 
-                                            className="text-[18px] md:text-[22px] text-[#777] group-hover:text-[#EAEAEA] transition-colors duration-500 font-garamond font-normal" 
+                            <div className="mt-2 bg-[#0D0D0D]/40 border border-white/[0.03] rounded-3xl p-8 md:p-10 ">
+                                <p className="text-[#777] text-[19px] md:text-[22px] leading-[1.65] font-garamond font-normal mb-6">
+                                    {notFor.preList}
+                                </p>
+                                
+                                <ul className="flex flex-col gap-3 md:gap-4 list-disc pl-6 marker:text-[#555]">
+                                    {notFor.items.map((item, idx) => (
+                                        <li
+                                            key={idx}
+                                            className={`text-[18px] md:text-[22px] text-[#888] leading-[1.5] font-garamond font-normal transform transition-all duration-700 ${isNotForVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}
+                                            style={{ transitionDelay: `${300 + (idx * 150)}ms` }}
                                         >
                                             {item}
-                                        </p>
-                                    </div>
-                                    {/* subtle red left border indicator on hover */}
-                                    <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[3px] h-0 bg-gradient-to-b from-red-500/80 to-red-800/80 rounded-r-full group-hover:h-1/2 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]" />
-                                </div>
-                            ))}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            <p className="text-[#ffffff] text-[18px] md:text-[20px] leading-[1.6] font-garamond italic mt-4">
+                                {notFor.conclusion}
+                            </p>
                         </div>
                     </div>
                 </div>

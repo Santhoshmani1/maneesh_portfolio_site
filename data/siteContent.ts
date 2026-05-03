@@ -168,16 +168,19 @@ export const siteContent = {
     ],
     notFor: {
       title: {
-        main: "Who this is",
-        highlight: "Not",
+        main: "Who this",
+        highlight: "isn't",
         suffix: "for"
       },
-      description: "My systems require serious commitment and a long-term mindset. If your team falls under the categories below, we won't be a good match.",
+      description: "Our approach is built for businesses committed to long-term, sustainable growth.",
+      preList: "We may not be the right fit if:",
       items: [
-        "Idea-stage startups",
-        "Short-term marketing experiments ",
-        "Companies looking for “just blogs”",
-      ]
+        "You’re in the early idea stage without validated traction",
+        "You’re exploring short-term marketing experiments",
+        "You’re looking for quick wins over foundational systems",
+        "You prefer tactical execution without strategic alignment"
+      ],
+      conclusion: "We partner best with teams that value clarity, consistency, and compounding results over time."
     }
   },
   whatMakesDifferent: {
@@ -296,7 +299,8 @@ export const siteContent = {
     social: [
       { name: "LinkedIn", href: "https://www.linkedin.com/in/maneesh-kumar-seepana/", icon: "linkedin" },
       { name: "Instagram", href: "https://www.instagram.com/maneeshseepana/", icon: "instagram" },
-      { name: "Gmail", href: "mailto:growth@maneeshseepana.com", icon: "gmail"},
+      { name: "YouTube", href: "https://www.youtube.com/@Maneeshseepana", icon: "youtube" },
+      { name: "Gmail", href: "mailto:growth@maneeshseepana.com", icon: "gmail" },
     ],
     copyright: "Maneesh Seepana. All rights reserved."
   }

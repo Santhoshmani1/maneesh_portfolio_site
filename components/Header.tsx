@@ -38,9 +38,9 @@ export default function Nav() {
                 }`}
         >
             <div className="max-w-275 mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="relative z-50">
+                <a href="#" className="relative z-50 fobt-bold">
                     <span
-                        className="text-[#F2F2F2] text-xl lg:text-2xl font-medium tracking-tighter font-bold"
+                        className="text-[#F2F2F2] text-xl lg:text-2xl tracking-tighter font-sem"
                         style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
                     >
                         {logo}

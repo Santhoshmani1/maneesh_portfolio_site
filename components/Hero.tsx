@@ -45,7 +45,7 @@ export default function Hero() {
                     </div>
 
                     <h1
-                        className="font-medium text-[#F2F2F2] leading-[1.05] tracking-tight mb-4 lg:mb-7 text-balance"
+                        className="font-bold text-[#F2F2F2] leading-[1.05] tracking-tight mb-4 lg:mb-7 text-balance"
                         style={{
                             fontSize: "clamp(34px, 5.5vw, 62px)",
                             fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
