@@ -51,7 +51,7 @@ export default function Hero() {
                             fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
                         }}
                     >
-                        {title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#999B9B] via-[#D4AF37] to-[#B3932D]">{title.highlight}</span> {title.suffix}
+                        {title.main} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f9db77] via-[#D4AF37] to-[#B3932D]">{title.highlight}</span> {title.suffix}
                     </h1>
 
                     <p
