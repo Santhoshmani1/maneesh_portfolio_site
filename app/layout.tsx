@@ -11,21 +11,21 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Maneesh Seepana — B2B Demand Generation Strategist",
+  title: "Maneesh Seepana - B2B Demand Generation Strategist",
   description:
-    "Demand generation strategy for SaaS and AI companies. Build pipeline, grow revenue, and become the category leader in your market.",
+    "B2B Demand Generation Strategist helping SaaS and AI companies generate qualified pipeline, accelerate revenue growth, and become category leaders.",
   metadataBase: new URL("https://maneeshseepana.com"),
   openGraph: {
-    title: "Maneesh Seepana — B2B Demand Generation Strategist",
+    title: "Maneesh Seepana - B2B Demand Generation Strategist",
     description:
-      "Demand generation strategy for SaaS and AI companies. Build pipeline, grow revenue, and become the category leader in your market.",
+      "B2B Demand Generation Strategist helping SaaS and AI companies generate qualified pipeline, accelerate revenue growth, and become category leaders.",
     type: "website",
     images: ["/og-image.jpg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maneesh Seepana — B2B Demand Generation Strategist",
-    description: "Demand generation strategy for SaaS and AI companies. Build pipeline, grow revenue, and become the category leader in your market.",
+    title: "Maneesh Seepana - B2B Demand Generation Strategist",
+    description: "B2B Demand Generation Strategist helping SaaS and AI companies generate qualified pipeline, accelerate revenue growth, and become category leaders.",
     images: ["/og-image.jpg"],
   },
   icons: {
